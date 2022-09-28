@@ -39,7 +39,7 @@ describe('Author with the most blogs', () => {
 })
 
 describe('Author with the most likes overall', () => {
-  test.only('Equals most liked author', () => {
+  test('Equals most liked author', () => {
     const result = listHelper.mostLikes(blogs)
     const mostLiked = {
       author: 'Edsger W. Dijkstra',
