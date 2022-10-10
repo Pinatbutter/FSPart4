@@ -1,21 +1,21 @@
 const listHelper = require('../utils/list_helper')
 const blogs = require('../utils/list_input_helper').blogList
 
-describe('dummy function', () => {
+describe.skip('dummy function', () => {
   test('dummy returns one', () => {
     const result = listHelper.dummy(blogs)
     expect(result).toBe(1)
   })
 })
 
-describe('total likes', () => {
+describe.skip('total likes', () => {
   test('Equals the total likes of all blogs', () => {
     const result = listHelper.totalLikes(blogs)
     expect(result).toBe(36)
   })
 })
 
-describe('First blog with most likes', () => {
+describe.skip('First blog with most likes', () => {
   test('Equals favorite blog', () => {
     const result = listHelper.favoriteBlog(blogs)
     const favBlog = {
@@ -27,7 +27,7 @@ describe('First blog with most likes', () => {
   })
 })
 
-describe('Author with the most blogs', () => {
+describe.skip('Author with the most blogs', () => {
   test('Equals biggest blogger', () => {
     const result = listHelper.mostBlogs(blogs)
     const biggestBlogger = {
@@ -38,7 +38,7 @@ describe('Author with the most blogs', () => {
   })
 })
 
-describe('Author with the most likes overall', () => {
+describe.skip('Author with the most likes overall', () => {
   test('Equals most liked author', () => {
     const result = listHelper.mostLikes(blogs)
     const mostLiked = {
